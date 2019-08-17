@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#C52786">
+
+        <TextView
+            android:id="@+id/tvView1"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="Android"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#6F6169"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvView2"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="#3F9643"
+            android:gravity="center"
+            android:text="LÀ"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvView1"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/tvView3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="LÀ"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="#4266BE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Tiền"
+            android:textSize="20dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/tvView3"
+            app:layout_constraintBottom_toTopOf="@+id/tvView3"
+            android:layout_marginRight="50dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#D6DD0B">
+
+        <TextView
+            android:id="@+id/tvView4"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Công việc"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="#15D51E"/>
+        
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Là"
+            android:textSize="20dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/tvView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginR="100dp"/>
+
+        <TextView
+            android:id="@+id/tvView5"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Trong xã hội"
+            android:background="#B112DD"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvView6"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toTopOf="@id/tvView5"
+            android:text="Của tôi"
+            android:textSize="20dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="#DB0F0F"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Địa vị"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#ffffff"
+            app:layout_constraintBottom_toTopOf="@id/tvView6"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
